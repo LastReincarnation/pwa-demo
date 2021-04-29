@@ -28,10 +28,13 @@ export default class Demo extends React.Component {
             <Slider defaultValue={30} disabled={disabled} />
             <Slider range defaultValue={[20, 50]} disabled={disabled} />
           </Button>
-            
+            <br/>
+            <br/>
+            <br/>
             <ThemeProvider theme={theme}>
                 Disabled: <Switch size="small" checked={disabled} onChange={this.handleDisabledChange} />
             </ThemeProvider>
+
           </>
         );
       }

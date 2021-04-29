@@ -2,6 +2,7 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import styled from 'styled-components'
 import Th from '../components/Theme'
 import Antd from '../components/Antd'
+import MyInput from '../components/MyInput'
 import 'antd/dist/antd.css'
 
 const GlobalStyle = createGlobalStyle`
@@ -52,6 +53,10 @@ export default function App({ Component, pageProps }) {
         <Th></Th>
 
         <Antd></Antd>
+
+        <br/>
+
+        请输入：<MyInput type='password'></MyInput>
     </>
   )
 }
